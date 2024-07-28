@@ -1,2 +1,1 @@
-USE alx_book_store;
-DESC Books;
+SELECT COLUMN_NAME , COLUMN_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'Books' AND table_schema = 'alx_book_store';
