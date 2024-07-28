@@ -13,5 +13,5 @@ try:
         with connection.cursor() as cursor:
             cursor.execute(create_db_query)
         print("Database 'alx_book_store' created successfully!")
-except mysql.connectorconnect as e:
+except mysql.connector.Error:
     print("Failed to connect to the database!")
